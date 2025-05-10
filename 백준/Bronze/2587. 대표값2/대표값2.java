@@ -12,8 +12,11 @@ public class Main {
             arr[i] = Integer.parseInt(br.readLine());
         }
         Arrays.sort(arr);
-        int avg = (arr[0] + arr[1] + arr[2] + arr[3] + arr[4])/5;
-        System.out.println(avg);
+        int sum = 0;
+        for (int i=0; i<5; i++) {
+            sum += arr[i];
+        }
+        System.out.println(sum/5);
         System.out.println(arr[2]);
     }
 }
